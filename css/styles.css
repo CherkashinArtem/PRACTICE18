@@ -2,7 +2,7 @@
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 
@@ -12,14 +12,27 @@
 
 .header {
     padding: 30px;
+    background-color: #000;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1) 20%, rgba(0, 208, 202, 1) 55%, rgba(0, 153, 17, 1) 100%);
+
 }
 
 .header .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.logo {}
+.logo {
+    display: flex;
+    color: #fff;
+    font-family: Raleway;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
+}
 
 .nav {}
 
@@ -28,6 +41,71 @@
     gap: 30px;
 }
 
-.nav__item {}
+.nav__item {
+    color: #fff;
+}
 
-.nav__item-link {}
+.nav__item-link {
+    color: #212121;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+}
+
+/* main */
+
+/* hero */
+
+.hero {
+    height: 100vh;
+    background-image: url("../img/hero/spaceship-7102944_1280.png"), url("../img/hero/earth-1756274_1280.jpg");
+    background-repeat: no-repeat;
+    background-size: 400px, cover;
+    background-position: 85% 20%, center;
+}
+
+.hero__title {
+    color: #fff;
+}
+
+.hero__button {
+    display: block;
+    width: 216px;
+    height: 50px;
+    border-radius: 4px;
+    background: #2196f3;
+    box-shadow: 0px 4px 4px 8px rgba(0, 0, 0, 0.15);
+    color: #fff;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 788;
+    line-height: 30px;
+    letter-spacing: 0.96px;
+}
+
+.hero__button:hover {
+    background-color: red;
+}
+
+/* box */
+.box__thumb {
+    display: flex;
+    flex-wrap: wrap;
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box {
+    height: 190px;
+    width: calc(50% - 20px);
+    margin: 10px;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
